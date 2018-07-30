@@ -8,6 +8,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { LawijComponent } from './lawij/lawij.component';
 import {HttpModule} from '@angular/http';
 import {UsersService} from '../services/Users.service';
+import { TestComponent } from './test/test.component';
 
 const appRoutes:Routes=[
   {path:'about',component:AboutComponent},
@@ -20,7 +21,8 @@ const appRoutes:Routes=[
     AppComponent,
     UsersComponent,
     AboutComponent,
-    LawijComponent
+    LawijComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(appRoutes),HttpModule
