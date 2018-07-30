@@ -1,0 +1,29 @@
+<div class="spacer container">
+  <div class="card bg-primary">
+    <div class="card-header">List des Users</div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <tr>
+          <th>CIN</th>
+          <th>NOM</th>
+          <th>PRENOM</th>
+          <th>EMAIL</th>
+          <th>TEL</th>
+          <th>PWD</th>
+          <th>ROLE</th>
+          <th>BIRTH-D</th>
+        </tr>
+        <tr *ngFor="let c of pageUser">
+          <td> {{c.cin}}</td>
+          <td> {{c.nom}}</td>
+          <td> {{c.prenom}}</td>
+          <td> {{c.email}}</td>
+          <td> {{c.tel}}</td>
+          <td> {{c.password}}</td>
+          <td> {{c.roles}}</td>
+          <td> {{c.birth_date}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
