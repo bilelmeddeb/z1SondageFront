@@ -10,6 +10,7 @@ import {HttpModule} from '@angular/http';
 import {UsersService} from '../services/Users.service';
 import { TestComponent } from './test/test.component';
 import { Test2Component } from './test2/test2.component';
+import {Test3Component} from './test3/test3.component';
 
 const appRoutes:Routes=[
   {path:'about',component:AboutComponent},
@@ -24,7 +25,8 @@ const appRoutes:Routes=[
     AboutComponent,
     LawijComponent,
     TestComponent,
-    Test2Component
+    Test2Component,
+    Test3Component
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(appRoutes),HttpModule
